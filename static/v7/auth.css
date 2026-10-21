@@ -1,0 +1,58 @@
+.auth-card{justify-content:flex-start;padding:30px 28px}
+.auth-card .auth-glyph{margin-bottom:17px}
+.auth-card h2{font-size:23px}
+.auth-card .segment{margin:8px 0 18px}
+.auth-card .field{margin-bottom:13px}
+.auth-message{min-height:20px;margin:9px 0 0;color:#a63c48;font-size:12px;line-height:1.6}
+.auth-message.success{color:#187c5d}
+.auth-card .captcha-row{display:grid;grid-template-columns:minmax(0,1fr) 120px;gap:9px;align-items:center}
+.auth-card .captcha-image{display:block;width:120px;height:44px;object-fit:cover;border:1px solid var(--line);border-radius:9px;cursor:pointer;background:#f5f7fa}
+.auth-card .password-help{font-size:11px;color:var(--muted);margin:-4px 0 14px;line-height:1.7}
+.auth-card .form-actions{display:grid;gap:9px;margin-top:5px}
+.auth-card .form-actions .button{width:100%}
+.auth-card .fineprint{margin-top:12px}
+.price-card #cosmicStatus,.price-card #proStatus{flex:initial;margin:0 0 15px}
+.login-hero .hero-copy h1{white-space:normal;max-width:12ch;overflow-wrap:anywhere}
+.login-hero .hero-copy h1 .title-line,.login-hero .hero-copy h1 .title-accent{display:block}
+.login-hero .hero-copy h1 em{font-style:normal;background:linear-gradient(110deg,#e5d8ff,#a4b9ff);background-clip:text;color:transparent}
+.login-hero .hero-copy p{max-width:300px}
+.login-hero .hero-copy .hero-notice{max-width:300px;margin:8px 0 0;padding:8px 11px;border:1px solid #b9c8e630;border-radius:10px;background:#dce6f00d;color:#b7c4d8;font-size:11px;line-height:1.65}
+.auth-faq{margin-top:24px;border-top:1px solid var(--line);padding-top:19px}
+.auth-faq h3{font-size:14px;font-weight:600;margin:0 0 7px}
+.auth-faq-item{border-bottom:1px solid var(--line);padding:12px 0}
+.auth-faq-item summary{cursor:pointer;font-size:12px;font-weight:600;line-height:1.6}
+.auth-faq-item summary:focus-visible{outline:3px solid #8b7ef2;outline-offset:4px;border-radius:3px}
+.auth-faq-item p{font-size:12px;color:var(--muted);line-height:1.75;margin:9px 0 0}
+.login-main{padding-bottom:0}
+.page-footer{padding-top:24px}
+@media(max-width:900px){.auth-card .auth-inputs{display:block}.auth-card{padding:28px}.auth-card .auth-glyph{display:grid}}
+@media(max-width:600px){.auth-card{padding:25px 22px}.auth-card .auth-glyph{display:grid}.auth-card h2{font-size:22px}.auth-card .captcha-row{grid-template-columns:minmax(0,1fr) 108px}.auth-card .captcha-image{width:108px}}
+/* Blend the actual 3D stage into the landing hero without a rectangular seam. */
+.login-hero .hero-scene{mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 87%,transparent),linear-gradient(to right,transparent,#000 16%,#000 89%,transparent);mask-composite:intersect}
+.login-hero{background:radial-gradient(ellipse at 65% 62%,#103b55 0,#122039 48%,#0e172b 85%)}
+@media(max-width:600px){.login-hero .hero-scene{mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 87%,transparent),linear-gradient(to right,transparent,#000 13%,#000 87%,transparent);mask-composite:intersect}.hero-copy p{color:#c1cede}.hero-caption b,.hero-caption span{font-size:11px}}
+
+/* V8: choose a real machine, then continue directly into that experience. */
+.hero-machine-picker{position:absolute;z-index:4;bottom:82px;left:40px;right:40px;display:flex;justify-content:center;gap:10px}
+.hero-machine-picker button{display:flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:10px 18px;color:#bdcae0;border:1px solid #a8badd32;border-radius:13px;background:#0d1b32a3;font-size:13px;backdrop-filter:blur(12px)}
+.hero-machine-picker button[aria-pressed=true]{background:#cbbaf122;color:#eee5ff;border-color:#c8b4f48a}.hero-machine-picker button:hover{background:#bfb3eb24}.hero-machine-picker .icon{width:19px;height:19px}
+.login-hero{min-height:640px}.login-hero .hero-scene{inset:132px 0 145px 35%;--stage-framing:1.1}.hero-copy p{font-size:14px;color:#c0cbe0}.hero-actions small{font-size:12px;color:#b8c6de}.hero-actions .button{min-height:48px;font-size:14px}.hero-caption{font-size:12px;color:#b3c2db}
+.auth-card.returning-user{align-self:center;min-height:0;padding:30px;border-color:#e3e0ef;box-shadow:0 14px 50px #27345606}.auth-card.returning-user .auth-tail{margin-top:20px;padding-top:18px}.auth-card.returning-user h2{overflow-wrap:anywhere;line-height:1.4}.auth-card.returning-user .auth-glyph{margin-bottom:14px}
+.resume-card{padding:19px;margin:22px 0;background:linear-gradient(125deg,#f2effa,#f2f5fb);border:1px solid #e5e0f0;border-radius:15px}.resume-card>span,.resume-card>small{display:block;font-size:12px;color:#737e95}.resume-card strong{display:block;margin:10px 0;font-size:18px;line-height:1.45;color:#303c59;overflow-wrap:anywhere}.auth-card .auth-signout{background:transparent;border-color:transparent;color:#7c879c;min-height:40px}.returning-user .fineprint{text-align:center}
+.header-nav{font-size:13px}.scene-link b{font-size:14px}.scene-link small{font-size:12px}.auth-card .field{font-size:13px}.auth-card>p{font-size:13px}.auth-faq-item summary,.auth-faq-item p{font-size:13px}
+@media(min-width:901px) and (max-width:1190px){.hero-machine-picker{left:24px;right:24px;gap:7px}.hero-machine-picker button{padding:10px 13px}.login-hero .hero-scene{inset:185px -5% 160px 27%}.hero-copy p{max-width:240px}.login-hero{min-height:650px}}
+@media(max-width:900px){.auth-card.returning-user{width:100%;padding:24px}.returning-user .resume-card{margin:16px 0}.returning-user .auth-tail{display:none}.hero-machine-picker{left:28px;right:28px}}
+@media(max-width:600px){
+ .login-hero{min-height:0;display:flex;flex-direction:column}.login-hero .hero-copy{padding:28px 24px 0;width:100%;order:1}.login-hero .hero-copy h1{font-size:38px;line-height:1.15;margin:22px 0 14px;max-width:12ch}.login-hero .hero-copy p{max-width:100%;font-size:13px;margin-bottom:0}.hero-orbit-label{top:25px;right:20px;font-size:10px}.hero-copy .eyebrow{font-size:10px}
+ .login-hero .hero-scene{position:relative;inset:auto;order:2;width:100%;height:245px;flex:none;margin-top:-3px;--stage-framing:1.12}
+ .hero-actions{position:static;order:3;margin:0 24px;display:grid;text-align:center}.hero-actions .button{width:100%;justify-content:center;font-size:14px;min-height:48px}.hero-actions small{display:block;font-size:11px;margin-top:10px}
+ .hero-machine-picker{position:static;order:4;margin:16px 20px 0;gap:6px}.hero-machine-picker button{flex:1;min-width:0;padding:10px 5px;gap:5px;font-size:11px}.hero-machine-picker .icon{width:16px;height:16px}
+ .hero-caption{position:static;order:5;display:flex;justify-content:space-between;gap:8px;margin:18px 24px 20px;padding-top:15px;font-size:10px}.hero-caption b,.hero-caption span{font-size:10px}.header-nav{font-size:12px}.scene-link small{font-size:11px}.scene-link b{font-size:13px}
+}
+
+/* Email-first signup, with a stable code action at narrow widths. */
+.auth-card .email-code-row{display:grid;grid-template-columns:minmax(0,1fr) 125px;gap:8px;align-items:center}.email-code-row input{min-width:0}.auth-card .email-code-row button{min-height:44px;padding:10px 8px;font-size:12px;white-space:nowrap}.auth-card .email-help{font-size:12px;line-height:1.7;color:#778399;margin:-3px 0 10px}.email-code-row button:disabled{opacity:.6;cursor:default}
+@media(max-width:360px){.auth-card .email-code-row{grid-template-columns:minmax(0,1fr) 108px}.auth-card .email-code-row button{font-size:11px}}
+
+/* Email identities may be longer than an account ID. */
+.auth-card h2{overflow-wrap:anywhere}

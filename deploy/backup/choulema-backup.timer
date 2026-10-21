@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Choulema offsite backup at 03:30 Asia/Shanghai
+
+[Timer]
+OnCalendar=*-*-* 03:30:00 Asia/Shanghai
+Persistent=true
+AccuracySec=1min
+Unit=choulema-backup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,18 @@
+/* Shared login/admin panels: one scroll area, with the close control always visible. */
+dialog#dialog{max-height:calc(100dvh - 24px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));overflow:hidden}
+dialog#dialog[open]{display:flex;flex-direction:column}
+#dialog .dialog-header{flex:none;gap:12px}
+#dialog .dialog-header h2{min-width:0;overflow-wrap:anywhere}
+#dialog #dialogBody{flex:1 1 auto;min-height:0;max-height:none;overflow:auto;overscroll-behavior:contain}
+#dialogClose{min-width:44px;min-height:44px;flex:none}
+.admin-content,.admin-body,.admin-card{min-width:0}
+.table-foot{flex-wrap:wrap}.table-foot .pager{flex:none}
+@media(max-width:680px){
+ body{padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+ .header,.admin-sidebar{padding-top:calc(14px + env(safe-area-inset-top,0px));height:auto;min-height:71px}
+ .page-footer,.admin-body{padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))}
+ .auth-card input,.admin-body input,.admin-body select,#dialog input,#dialog select,#dialog textarea{font-size:16px}
+ .admin-nav button,.admin-body .button,.admin-body .text-button,#dialog .button,#dialog .text-button{min-height:44px}
+ .account-hero{flex-wrap:wrap;gap:10px}.account-hero>div{min-width:0;overflow-wrap:anywhere}
+ #dialog .dialog-header{padding:12px 16px}#dialog #dialogBody{padding:16px}
+}

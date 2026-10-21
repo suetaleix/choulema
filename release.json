@@ -1,0 +1,9 @@
+{
+  "version": "8.0.0",
+  "channel": "stable",
+  "catalog_schema": 1,
+  "database_policy": "additive-compatible",
+  "production_approved": false,
+  "release_date": "2026-10-01",
+  "baseline_release": "7.1.0-rc.1-aurora-20261001"
+}

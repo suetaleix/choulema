@@ -1,0 +1,16 @@
+Slot-inspired audio review 3
+Both themes: original pitched arcade FM, modal bell and resonant pop instruments.
+All continuous rolling/friction layers and sampled chip/card impacts removed.
+No sampled or stochastic sound source is scheduled in the current arrangements.
+Short diffuse reverb processes tonal notes only; it is not a separate noise bed.
+Physical crossings/impacts trigger musical rhythm. No ambient loop is loaded.
+
+Historical CC0 Kenney files and credits are retained on disk, but the current six
+candidates do not use them. Previous audio versions remain historical.
+
+Design reference only: FUSEHIVE Progressive Slots and Classic Fruit Machines.
+No paid audio acquired or copied.
+https://sonniss.com/sound-effects/progressive-slots-classic-fruit-machines-sound-effects-library-casino-slot-game-royalty-free-sounds-audio-pack/
+
+Build: python scripts/build_slot_audio_review.py
+This is a preview; production theme assignments remain null.

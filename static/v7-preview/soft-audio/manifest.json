@@ -1,0 +1,2560 @@
+{
+  "version": "soft-audio-review-1",
+  "sampleRate": 48000,
+  "duration": 16.0,
+  "phases": [
+    {
+      "id": "start",
+      "name": "启动",
+      "start": 0.0,
+      "end": 0.8
+    },
+    {
+      "id": "motion",
+      "name": "运转",
+      "start": 0.8,
+      "end": 8.8
+    },
+    {
+      "id": "charge",
+      "name": "蓄势",
+      "start": 8.8,
+      "end": 10.2
+    },
+    {
+      "id": "coast",
+      "name": "减速",
+      "start": 10.2,
+      "end": 11.8
+    },
+    {
+      "id": "reveal",
+      "name": "揭晓",
+      "start": 11.8,
+      "end": 14.2
+    },
+    {
+      "id": "tail",
+      "name": "收尾",
+      "start": 14.2,
+      "end": 16.0
+    }
+  ],
+  "machines": {
+    "capsule": "胶囊机",
+    "wheel": "转盘",
+    "sphere": "姓名星球"
+  },
+  "candidates": {
+    "aurora": {
+      "name": "星海空灵",
+      "tag": "柔和 · 舒展",
+      "color": "#bba9ef",
+      "description": "保留你认可的柔和音色，星海缓缓展开，揭晓时轻轻绽放。",
+      "process": "柔和和声与空间掠过",
+      "reward": "清晰三音揭晓，温柔收尾",
+      "sources": [
+        "glow",
+        "shimmer"
+      ],
+      "clips": {
+        "capsule": {
+          "url": "./soft-audio/aurora-capsule.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.01,
+          "truePeakDbTP": -4.03,
+          "phaseRmsDbfs": {
+            "start": -23.58,
+            "motion": -21.25,
+            "charge": -19.0,
+            "coast": -25.68,
+            "reveal": -17.18,
+            "tail": -48.18
+          },
+          "bytes": 385389,
+          "sha256": "5dfc017828a4ead2f4b7d3c2d692c5fb4f590dccb371b433ff199fddc977f89a",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.0395
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.027
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0188
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.035
+            },
+            {
+              "time": 0.95,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0201
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 1.604,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0205
+            },
+            {
+              "time": 2.441,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0211
+            },
+            {
+              "time": 2.993,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0215
+            },
+            {
+              "time": 3.577,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0219
+            },
+            {
+              "time": 4.112,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0222
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 4.822,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0227
+            },
+            {
+              "time": 5.518,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0232
+            },
+            {
+              "time": 6.253,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0237
+            },
+            {
+              "time": 6.81,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0241
+            },
+            {
+              "time": 7.457,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0243
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 7.935,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0243
+            },
+            {
+              "time": 8.443,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0243
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.035
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.0395
+            },
+            {
+              "time": 9.123,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0213
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0441
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0486
+            },
+            {
+              "time": 9.683,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0161
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.0205
+            },
+            {
+              "time": 10.753,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0126
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.0365
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.025
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0332
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0456
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0266
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.019
+            }
+          ]
+        },
+        "wheel": {
+          "url": "./soft-audio/aurora-wheel.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.01,
+          "truePeakDbTP": -3.94,
+          "phaseRmsDbfs": {
+            "start": -23.71,
+            "motion": -21.39,
+            "charge": -18.79,
+            "coast": -25.51,
+            "reveal": -17.09,
+            "tail": -48.1
+          },
+          "bytes": 385389,
+          "sha256": "c0d185a76812b096b842ae4f6d4f28b476f44d8fda74de8ccb647e451b050c5b",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.0395
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.027
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0188
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.035
+            },
+            {
+              "time": 0.95,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0176
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 1.593,
+              "kind": "wheel-soft-pass",
+              "gain": 0.018
+            },
+            {
+              "time": 2.222,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0183
+            },
+            {
+              "time": 2.838,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0187
+            },
+            {
+              "time": 3.442,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0191
+            },
+            {
+              "time": 4.035,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0194
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 4.617,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0198
+            },
+            {
+              "time": 5.189,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0201
+            },
+            {
+              "time": 5.751,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0204
+            },
+            {
+              "time": 6.305,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 6.849,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0211
+            },
+            {
+              "time": 7.386,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0213
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 7.917,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0213
+            },
+            {
+              "time": 8.448,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0213
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.035
+            },
+            {
+              "time": 8.979,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0198
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.0395
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0441
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0486
+            },
+            {
+              "time": 9.549,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0152
+            },
+            {
+              "time": 10.294,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0111
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.0205
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.0365
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.025
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0332
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0456
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0266
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.019
+            }
+          ]
+        },
+        "sphere": {
+          "url": "./soft-audio/aurora-sphere.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.01,
+          "truePeakDbTP": -4.13,
+          "phaseRmsDbfs": {
+            "start": -25.1,
+            "motion": -21.07,
+            "charge": -19.34,
+            "coast": -26.12,
+            "reveal": -17.27,
+            "tail": -48.27
+          },
+          "bytes": 385389,
+          "sha256": "9145f516793a5581b15e8305b8349d9d3817ae0786de52b88bf1607312e185be",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.0395
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.027
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0188
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.035
+            },
+            {
+              "time": 0.95,
+              "kind": "sphere-space-pass",
+              "gain": 0.0452
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 2.635,
+              "kind": "sphere-space-pass",
+              "gain": 0.0478
+            },
+            {
+              "time": 4.23,
+              "kind": "sphere-space-pass",
+              "gain": 0.0502
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 5.747,
+              "kind": "sphere-space-pass",
+              "gain": 0.0525
+            },
+            {
+              "time": 7.198,
+              "kind": "sphere-space-pass",
+              "gain": 0.0547
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0208
+            },
+            {
+              "time": 8.591,
+              "kind": "sphere-space-pass",
+              "gain": 0.0547
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.035
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.0395
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0441
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0486
+            },
+            {
+              "time": 9.983,
+              "kind": "sphere-space-pass",
+              "gain": 0.0298
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.0205
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.0365
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.025
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0332
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0851
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0456
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0266
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.019
+            }
+          ]
+        }
+      }
+    },
+    "starlight": {
+      "name": "星光奇遇",
+      "tag": "闪耀 · 轻奇幻",
+      "color": "#ebc990",
+      "description": "现成魔法风铃作为主角，星光逐渐汇聚，揭晓明亮而轻盈。",
+      "process": "魔法风铃与流动星光",
+      "reward": "一束闪光展开，留下清透余音",
+      "sources": [
+        "glow",
+        "shimmer"
+      ],
+      "clips": {
+        "capsule": {
+          "url": "./soft-audio/starlight-capsule.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.0,
+          "truePeakDbTP": -2.56,
+          "phaseRmsDbfs": {
+            "start": -25.34,
+            "motion": -21.08,
+            "charge": -19.63,
+            "coast": -25.8,
+            "reveal": -17.67,
+            "tail": -48.07
+          },
+          "bytes": 385389,
+          "sha256": "ca8ed46d5fecc316f5833a770cdf77b4abb078fe795217d7b7f954fcbb15f70f",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.025
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.02
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0587
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0221
+            },
+            {
+              "time": 0.95,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0127
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 1.435,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0129
+            },
+            {
+              "time": 2.056,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0132
+            },
+            {
+              "time": 2.616,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0134
+            },
+            {
+              "time": 3.213,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0137
+            },
+            {
+              "time": 3.783,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0139
+            },
+            {
+              "time": 4.21,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0141
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 4.663,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0143
+            },
+            {
+              "time": 5.187,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0145
+            },
+            {
+              "time": 5.595,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0147
+            },
+            {
+              "time": 6.095,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0149
+            },
+            {
+              "time": 6.512,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0151
+            },
+            {
+              "time": 6.959,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0153
+            },
+            {
+              "time": 7.421,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0154
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 7.926,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0154
+            },
+            {
+              "time": 8.474,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0154
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0221
+            },
+            {
+              "time": 8.89,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0148
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.025
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0278
+            },
+            {
+              "time": 9.331,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0122
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0307
+            },
+            {
+              "time": 9.817,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0093
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.013
+            },
+            {
+              "time": 10.634,
+              "kind": "capsule-soft-motion",
+              "gain": 0.008
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.023
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.105
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.1037
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0288
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0168
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.012
+            }
+          ]
+        },
+        "wheel": {
+          "url": "./soft-audio/starlight-wheel.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.0,
+          "truePeakDbTP": -2.58,
+          "phaseRmsDbfs": {
+            "start": -24.91,
+            "motion": -21.21,
+            "charge": -19.18,
+            "coast": -25.66,
+            "reveal": -17.69,
+            "tail": -48.08
+          },
+          "bytes": 385389,
+          "sha256": "8a12ab32ffee8bf037a1efa5d5d0339e22da41f4cfaf4a55a6cd15c48762feaa",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.025
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.02
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0587
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0221
+            },
+            {
+              "time": 0.95,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0111
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 1.467,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0113
+            },
+            {
+              "time": 1.976,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0115
+            },
+            {
+              "time": 2.476,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0117
+            },
+            {
+              "time": 2.968,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0119
+            },
+            {
+              "time": 3.452,
+              "kind": "wheel-soft-pass",
+              "gain": 0.012
+            },
+            {
+              "time": 3.93,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0122
+            },
+            {
+              "time": 4.4,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0124
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 4.863,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0126
+            },
+            {
+              "time": 5.32,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0127
+            },
+            {
+              "time": 5.772,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0129
+            },
+            {
+              "time": 6.217,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0131
+            },
+            {
+              "time": 6.656,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0132
+            },
+            {
+              "time": 7.09,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0134
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 7.519,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0134
+            },
+            {
+              "time": 7.947,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0134
+            },
+            {
+              "time": 8.374,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0134
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0221
+            },
+            {
+              "time": 8.802,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0134
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.025
+            },
+            {
+              "time": 9.229,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0112
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0278
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0307
+            },
+            {
+              "time": 9.741,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0086
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.013
+            },
+            {
+              "time": 10.412,
+              "kind": "wheel-soft-pass",
+              "gain": 0.007
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.023
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.105
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.1037
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0288
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0168
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.012
+            }
+          ]
+        },
+        "sphere": {
+          "url": "./soft-audio/starlight-sphere.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.0,
+          "truePeakDbTP": -2.81,
+          "phaseRmsDbfs": {
+            "start": -25.8,
+            "motion": -20.91,
+            "charge": -19.67,
+            "coast": -26.45,
+            "reveal": -17.92,
+            "tail": -48.32
+          },
+          "bytes": 385389,
+          "sha256": "ce4be7f499b74235252559ff40cc061bc20a2df9ee64f9002d535cf9d8f4bc9e",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.025
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.02
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0587
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0221
+            },
+            {
+              "time": 0.95,
+              "kind": "sphere-space-pass",
+              "gain": 0.0286
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 2.307,
+              "kind": "sphere-space-pass",
+              "gain": 0.0299
+            },
+            {
+              "time": 3.604,
+              "kind": "sphere-space-pass",
+              "gain": 0.0311
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 4.849,
+              "kind": "sphere-space-pass",
+              "gain": 0.0323
+            },
+            {
+              "time": 6.049,
+              "kind": "sphere-space-pass",
+              "gain": 0.0335
+            },
+            {
+              "time": 7.207,
+              "kind": "sphere-space-pass",
+              "gain": 0.0346
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.065
+            },
+            {
+              "time": 8.328,
+              "kind": "sphere-space-pass",
+              "gain": 0.0346
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0221
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.025
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0278
+            },
+            {
+              "time": 9.449,
+              "kind": "sphere-space-pass",
+              "gain": 0.0259
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0307
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.013
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.023
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.105
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.1037
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0288
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0168
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.012
+            }
+          ]
+        }
+      }
+    },
+    "spring": {
+      "name": "星泉流光",
+      "tag": "水滴 · 流动",
+      "color": "#89d9d5",
+      "description": "真实水滴融入轻盈音符，涟漪随着运转展开，最后汇成一束光。",
+      "process": "柔化水滴、涟漪与疏落音符",
+      "reward": "水滴落定，和声与闪光展开",
+      "sources": [
+        "glow",
+        "water",
+        "shimmer"
+      ],
+      "clips": {
+        "capsule": {
+          "url": "./soft-audio/spring-capsule.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.1,
+          "truePeakDbTP": -1.7,
+          "phaseRmsDbfs": {
+            "start": -25.3,
+            "motion": -20.45,
+            "charge": -18.51,
+            "coast": -24.95,
+            "reveal": -17.31,
+            "tail": -48.84
+          },
+          "bytes": 385389,
+          "sha256": "68842836c2d5b40db5f4fa008417b99239f1113368f102c7f7de35431235bca0",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.025
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.018
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0197
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0221
+            },
+            {
+              "time": 0.95,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0127
+            },
+            {
+              "time": 0.99,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 1.474,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0129
+            },
+            {
+              "time": 1.994,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0131
+            },
+            {
+              "time": 2.034,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 2.505,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0134
+            },
+            {
+              "time": 3.226,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0137
+            },
+            {
+              "time": 3.266,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 3.911,
+              "kind": "capsule-soft-motion",
+              "gain": 0.014
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 4.579,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0142
+            },
+            {
+              "time": 4.619,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 5.188,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0145
+            },
+            {
+              "time": 5.688,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0147
+            },
+            {
+              "time": 5.728,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 6.349,
+              "kind": "capsule-soft-motion",
+              "gain": 0.015
+            },
+            {
+              "time": 7.01,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0153
+            },
+            {
+              "time": 7.05,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 7.603,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0154
+            },
+            {
+              "time": 8.062,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0154
+            },
+            {
+              "time": 8.102,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 8.645,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0154
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0221
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.025
+            },
+            {
+              "time": 9.247,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0127
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0278
+            },
+            {
+              "time": 9.287,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0307
+            },
+            {
+              "time": 9.786,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0095
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.013
+            },
+            {
+              "time": 10.724,
+              "kind": "capsule-soft-motion",
+              "gain": 0.008
+            },
+            {
+              "time": 10.764,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 11.55,
+              "kind": "water-landing",
+              "gain": 0.0816
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.018
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0349
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0288
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0168
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.012
+            }
+          ]
+        },
+        "wheel": {
+          "url": "./soft-audio/spring-wheel.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.0,
+          "truePeakDbTP": -1.76,
+          "phaseRmsDbfs": {
+            "start": -25.12,
+            "motion": -20.31,
+            "charge": -18.33,
+            "coast": -24.61,
+            "reveal": -17.36,
+            "tail": -48.88
+          },
+          "bytes": 385389,
+          "sha256": "51eaeb4a4419e86cbc04150bf80cf991d87601d684da9bf041cb18ab5de8d9a3",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.025
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.018
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0197
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0221
+            },
+            {
+              "time": 0.95,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0111
+            },
+            {
+              "time": 0.99,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 1.538,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0113
+            },
+            {
+              "time": 2.115,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0115
+            },
+            {
+              "time": 2.155,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 2.681,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0118
+            },
+            {
+              "time": 3.237,
+              "kind": "wheel-soft-pass",
+              "gain": 0.012
+            },
+            {
+              "time": 3.277,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 3.783,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0122
+            },
+            {
+              "time": 4.32,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0124
+            },
+            {
+              "time": 4.36,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 4.848,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0126
+            },
+            {
+              "time": 5.368,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0128
+            },
+            {
+              "time": 5.408,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 5.88,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0129
+            },
+            {
+              "time": 6.384,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0131
+            },
+            {
+              "time": 6.424,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 6.882,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0133
+            },
+            {
+              "time": 7.372,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0134
+            },
+            {
+              "time": 7.412,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 7.858,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0134
+            },
+            {
+              "time": 8.344,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0134
+            },
+            {
+              "time": 8.384,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0221
+            },
+            {
+              "time": 8.83,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0133
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.025
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0278
+            },
+            {
+              "time": 9.322,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0107
+            },
+            {
+              "time": 9.362,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0307
+            },
+            {
+              "time": 9.93,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0076
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.013
+            },
+            {
+              "time": 10.789,
+              "kind": "wheel-soft-pass",
+              "gain": 0.007
+            },
+            {
+              "time": 10.829,
+              "kind": "water-ripple",
+              "gain": 0.0493
+            },
+            {
+              "time": 11.55,
+              "kind": "water-landing",
+              "gain": 0.0816
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.018
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0349
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0288
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0168
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.012
+            }
+          ]
+        },
+        "sphere": {
+          "url": "./soft-audio/spring-sphere.mp3",
+          "duration": 16,
+          "measuredLUFS": -18.0,
+          "truePeakDbTP": -2.04,
+          "phaseRmsDbfs": {
+            "start": -25.95,
+            "motion": -20.58,
+            "charge": -18.45,
+            "coast": -27.29,
+            "reveal": -17.63,
+            "tail": -49.13
+          },
+          "bytes": 385389,
+          "sha256": "f331ba745f4ff3658336020448bd53fea6289a9f3009e098a8b01fee6d46edfd",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.025
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.018
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0197
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0221
+            },
+            {
+              "time": 0.95,
+              "kind": "sphere-space-pass",
+              "gain": 0.0286
+            },
+            {
+              "time": 0.99,
+              "kind": "water-ripple",
+              "gain": 0.0646
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 2.492,
+              "kind": "sphere-space-pass",
+              "gain": 0.03
+            },
+            {
+              "time": 3.958,
+              "kind": "sphere-space-pass",
+              "gain": 0.0314
+            },
+            {
+              "time": 3.998,
+              "kind": "water-ripple",
+              "gain": 0.0646
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 5.359,
+              "kind": "sphere-space-pass",
+              "gain": 0.0328
+            },
+            {
+              "time": 6.702,
+              "kind": "sphere-space-pass",
+              "gain": 0.0341
+            },
+            {
+              "time": 6.742,
+              "kind": "water-ripple",
+              "gain": 0.0646
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0218
+            },
+            {
+              "time": 7.994,
+              "kind": "sphere-space-pass",
+              "gain": 0.0346
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0221
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.025
+            },
+            {
+              "time": 9.269,
+              "kind": "sphere-space-pass",
+              "gain": 0.0283
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0278
+            },
+            {
+              "time": 9.309,
+              "kind": "water-ripple",
+              "gain": 0.0646
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.0307
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.013
+            },
+            {
+              "time": 11.55,
+              "kind": "water-landing",
+              "gain": 0.0816
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.018
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0349
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0538
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0288
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0168
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.012
+            }
+          ]
+        }
+      }
+    },
+    "moon": {
+      "name": "月光秘境",
+      "tag": "温暖 · 梦幻",
+      "color": "#e4adc9",
+      "description": "低而温暖的空间和声，期待缓慢升起，结果像月光一样舒展开。",
+      "process": "温暖低音与舒缓空间流动",
+      "reward": "宽阔和声、柔和魔法尾音",
+      "sources": [
+        "glow",
+        "shimmer"
+      ],
+      "clips": {
+        "capsule": {
+          "url": "./soft-audio/moon-capsule.mp3",
+          "duration": 16,
+          "measuredLUFS": -17.97,
+          "truePeakDbTP": -3.86,
+          "phaseRmsDbfs": {
+            "start": -26.95,
+            "motion": -19.97,
+            "charge": -18.76,
+            "coast": -25.19,
+            "reveal": -18.74,
+            "tail": -47.25
+          },
+          "bytes": 385389,
+          "sha256": "d9d10de7ed2ea2f97efde70e88cef0177d760debdc9b611da4fae28b02cdb8d2",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.0333
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.04
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0282
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0294
+            },
+            {
+              "time": 0.95,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0169
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 1.955,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0175
+            },
+            {
+              "time": 2.877,
+              "kind": "capsule-soft-motion",
+              "gain": 0.018
+            },
+            {
+              "time": 3.706,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0185
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 4.522,
+              "kind": "capsule-soft-motion",
+              "gain": 0.019
+            },
+            {
+              "time": 5.358,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0194
+            },
+            {
+              "time": 6.086,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0198
+            },
+            {
+              "time": 6.741,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0202
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 7.527,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0205
+            },
+            {
+              "time": 8.254,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0205
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0294
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.0333
+            },
+            {
+              "time": 9.1,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0181
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0371
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.041
+            },
+            {
+              "time": 10.061,
+              "kind": "capsule-soft-motion",
+              "gain": 0.0106
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.0173
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.0307
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.015
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0498
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0384
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0224
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.016
+            }
+          ]
+        },
+        "wheel": {
+          "url": "./soft-audio/moon-wheel.mp3",
+          "duration": 16,
+          "measuredLUFS": -17.97,
+          "truePeakDbTP": -3.88,
+          "phaseRmsDbfs": {
+            "start": -26.81,
+            "motion": -19.99,
+            "charge": -18.67,
+            "coast": -25.2,
+            "reveal": -18.77,
+            "tail": -47.27
+          },
+          "bytes": 385389,
+          "sha256": "2ae9881a6528f4e6bb7a71ae6b55d45efdb7e9e9b9d30b457283fd7f15d04579",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.0333
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.04
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0282
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0294
+            },
+            {
+              "time": 0.95,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0148
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 1.756,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0152
+            },
+            {
+              "time": 2.541,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0156
+            },
+            {
+              "time": 3.306,
+              "kind": "wheel-soft-pass",
+              "gain": 0.016
+            },
+            {
+              "time": 4.052,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0164
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 4.782,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0167
+            },
+            {
+              "time": 5.496,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0171
+            },
+            {
+              "time": 6.195,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0174
+            },
+            {
+              "time": 6.88,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0178
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 7.552,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0179
+            },
+            {
+              "time": 8.218,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0179
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0294
+            },
+            {
+              "time": 8.884,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0173
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.0333
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0371
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.041
+            },
+            {
+              "time": 9.573,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0126
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.0173
+            },
+            {
+              "time": 10.52,
+              "kind": "wheel-soft-pass",
+              "gain": 0.0093
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.0307
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.015
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0498
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0384
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0224
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.016
+            }
+          ]
+        },
+        "sphere": {
+          "url": "./soft-audio/moon-sphere.mp3",
+          "duration": 16,
+          "measuredLUFS": -17.99,
+          "truePeakDbTP": -4.09,
+          "phaseRmsDbfs": {
+            "start": -26.94,
+            "motion": -19.95,
+            "charge": -18.73,
+            "coast": -25.18,
+            "reveal": -18.98,
+            "tail": -47.49
+          },
+          "bytes": 385389,
+          "sha256": "f60ee4e35e187aa96ba8e62b893e60ef7115ea89cd13d1b8ec9d1c059e26659b",
+          "events": [
+            {
+              "time": 0.0,
+              "kind": "press",
+              "gain": 0.0333
+            },
+            {
+              "time": 0.12,
+              "kind": "spatial-body",
+              "gain": 0.04
+            },
+            {
+              "time": 0.13,
+              "kind": "start-glimmer",
+              "gain": 0.0282
+            },
+            {
+              "time": 0.2,
+              "kind": "start",
+              "gain": 0.0294
+            },
+            {
+              "time": 0.95,
+              "kind": "sphere-space-pass",
+              "gain": 0.0381
+            },
+            {
+              "time": 1.25,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 3.063,
+              "kind": "sphere-space-pass",
+              "gain": 0.0408
+            },
+            {
+              "time": 4.45,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 5.036,
+              "kind": "sphere-space-pass",
+              "gain": 0.0433
+            },
+            {
+              "time": 6.894,
+              "kind": "sphere-space-pass",
+              "gain": 0.0457
+            },
+            {
+              "time": 7.5,
+              "kind": "glimmer-pass",
+              "gain": 0.0312
+            },
+            {
+              "time": 8.656,
+              "kind": "sphere-space-pass",
+              "gain": 0.0461
+            },
+            {
+              "time": 8.75,
+              "kind": "anticipation",
+              "gain": 0.0294
+            },
+            {
+              "time": 9.01,
+              "kind": "anticipation",
+              "gain": 0.0333
+            },
+            {
+              "time": 9.27,
+              "kind": "anticipation",
+              "gain": 0.0371
+            },
+            {
+              "time": 9.53,
+              "kind": "anticipation",
+              "gain": 0.041
+            },
+            {
+              "time": 10.35,
+              "kind": "coast",
+              "gain": 0.0173
+            },
+            {
+              "time": 10.402,
+              "kind": "sphere-space-pass",
+              "gain": 0.024
+            },
+            {
+              "time": 11.58,
+              "kind": "soft-landing",
+              "gain": 0.0307
+            },
+            {
+              "time": 11.8,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 11.84,
+              "kind": "reveal-flash",
+              "gain": 0.015
+            },
+            {
+              "time": 11.93,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 12.04,
+              "kind": "reveal-glimmer",
+              "gain": 0.0498
+            },
+            {
+              "time": 12.06,
+              "kind": "reveal-note",
+              "gain": 0.0717
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0384
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.0224
+            },
+            {
+              "time": 12.08,
+              "kind": "reveal-body",
+              "gain": 0.016
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sources": {
+    "glow": {
+      "author": "newagesoup",
+      "title": "GLEAM-GLOW-SFX-CHIME.wav",
+      "page": "https://freesound.org/people/newagesoup/sounds/351408/",
+      "url": "https://cdn.freesound.org/previews/351/351408_4067257-hq.mp3",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "glow-preview.mp3",
+      "acquisition": "Public author HQ preview; not the original WAV",
+      "sha256": "573cb83885ac0a0386a5bc75b1e097ef713fd587f1a8187e0c2e80e9e22b5f5a"
+    },
+    "water": {
+      "author": "bxyorna",
+      "title": "Water drop / Splash",
+      "page": "https://freesound.org/people/bxyorna/sounds/410335/",
+      "url": "https://cdn.freesound.org/previews/410/410335_7963426-hq.mp3",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "file": "water-preview.mp3",
+      "acquisition": "Public author HQ preview; not the original AIFF",
+      "sha256": "2ba6f2dc5f1575eed55f333dcc4ee1f0d8b79963effec78766a75d567bd281da"
+    },
+    "shimmer": {
+      "author": "The Berklee College of Music",
+      "uploader": "qubodup",
+      "title": "Shimmer glitter magic",
+      "page": "https://opengameart.org/content/shimmer-glitter-magic",
+      "url": "https://opengameart.org/sites/default/files/shimmer_1.flac",
+      "license": "CC-BY-3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "file": "shimmer.flac",
+      "acquisition": "Public author-linked FLAC",
+      "sha256": "b6802e6ef22189058a4406ae5c7bda9a54c47e908fad3fd6212650c1aa0170af"
+    }
+  },
+  "themeAssignments": {
+    "default": null,
+    "cosmic": null
+  },
+  "arrangement": "Existing stellar sine character plus licensed sample edits. Trim, filtering, speed change, spatial movement, fades and layered arrangement. All source material modified.",
+  "reviewOnly": true
+}

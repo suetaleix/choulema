@@ -1,0 +1,381 @@
+{
+  "version": "game-audio-review-1",
+  "sampleRate": 48000,
+  "sources": {
+    "publisher": "Kenney",
+    "license": "CC0-1.0",
+    "page": "https://kenney.nl/assets/casino-audio",
+    "inputs": {
+      "chips-collide-1": {
+        "file": "chips-collide-1.ogg",
+        "sha256": "f41b3d106360fc68ebc061a211d4265b4cb5fa1fbe86e4d57d3673510e2c3784",
+        "processing": "mono decode, trim, resample, lowpass, envelope, mix"
+      },
+      "chips-collide-2": {
+        "file": "chips-collide-2.ogg",
+        "sha256": "2a10c5ff4b2fbaa55a317fc258ddce3fec85bd26db2d3c2ad298b3b33ce23bc6",
+        "processing": "mono decode, trim, resample, lowpass, envelope, mix"
+      },
+      "chips-collide-3": {
+        "file": "chips-collide-3.ogg",
+        "sha256": "1c5e885f72b64c38fff7ef05579e49310e7acf026cf123ffb65fffb57fb06e1c",
+        "processing": "mono decode, trim, resample, lowpass, envelope, mix"
+      },
+      "dice-shake-1": {
+        "file": "dice-shake-1.ogg",
+        "sha256": "ba603441c857204dbe3ff3345902c7e1c3f523bf1bd314acf088609bc6c1e4e5",
+        "processing": "mono decode, trim, resample, lowpass, envelope, mix"
+      },
+      "chip-lay-1": {
+        "file": "chip-lay-1.ogg",
+        "sha256": "4b2111252ccb64eed67f171e061053849cfbb29873536c03948646f244a3905c",
+        "processing": "mono decode, trim, resample, lowpass, envelope, mix"
+      },
+      "card-slide-1": {
+        "file": "card-slide-1.ogg",
+        "sha256": "006cf9822d15d7063f8899e56041f41646df30adb6fbd8b974ee5d5420012690",
+        "processing": "mono decode, trim, resample, lowpass, envelope, mix"
+      },
+      "cards-pack-open-1": {
+        "file": "cards-pack-open-1.ogg",
+        "sha256": "1214059fdfbf1c396c0702244fc833739cc346d326a71e450b731f456e54d6fb",
+        "processing": "mono decode, trim, resample, lowpass, envelope, mix"
+      }
+    },
+    "originalSynthesis": "scripts/build_game_audio.py: original instrumental voices, pitch envelopes, reward melodies and arrangements"
+  },
+  "candidates": {
+    "a": {
+      "name": "欢乐街机",
+      "cues": {
+        "press": {
+          "url": "./game-audio/a-press.ogg",
+          "duration": 0.17,
+          "peakDbfs": -14.56
+        },
+        "start": {
+          "url": "./game-audio/a-start.ogg",
+          "duration": 0.62,
+          "peakDbfs": -16.06
+        },
+        "capsule-hit-0": {
+          "url": "./game-audio/a-capsule-hit-0.ogg",
+          "duration": 0.22,
+          "peakDbfs": -18.03
+        },
+        "capsule-hit-1": {
+          "url": "./game-audio/a-capsule-hit-1.ogg",
+          "duration": 0.22,
+          "peakDbfs": -17.41
+        },
+        "capsule-hit-2": {
+          "url": "./game-audio/a-capsule-hit-2.ogg",
+          "duration": 0.22,
+          "peakDbfs": -17.72
+        },
+        "capsule-roll": {
+          "url": "./game-audio/a-capsule-roll.ogg",
+          "duration": 0.82,
+          "peakDbfs": -20.54
+        },
+        "wheel-tick": {
+          "url": "./game-audio/a-wheel-tick.ogg",
+          "duration": 0.11,
+          "peakDbfs": -16.0
+        },
+        "sphere-pass": {
+          "url": "./game-audio/a-sphere-pass.ogg",
+          "duration": 0.48,
+          "peakDbfs": -20.91
+        },
+        "rise": {
+          "url": "./game-audio/a-rise.ogg",
+          "duration": 0.9,
+          "peakDbfs": -20.22
+        },
+        "exit": {
+          "url": "./game-audio/a-exit.ogg",
+          "duration": 0.42,
+          "peakDbfs": -13.99
+        },
+        "land": {
+          "url": "./game-audio/a-land.ogg",
+          "duration": 0.33,
+          "peakDbfs": -11.03
+        },
+        "open": {
+          "url": "./game-audio/a-open.ogg",
+          "duration": 0.33,
+          "peakDbfs": -18.94
+        },
+        "reveal": {
+          "url": "./game-audio/a-reveal.ogg",
+          "duration": 2.1,
+          "peakDbfs": -5.38
+        },
+        "return": {
+          "url": "./game-audio/a-return.ogg",
+          "duration": 0.22,
+          "peakDbfs": -24.59
+        }
+      },
+      "runtimeGain": 1.469,
+      "reel": {
+        "url": "./game-audio/a-reel.ogg",
+        "duration": 11,
+        "measuredLUFS": -17.99,
+        "truePeakDbTP": -2.12
+      }
+    },
+    "b": {
+      "name": "机械游乐场",
+      "cues": {
+        "press": {
+          "url": "./game-audio/b-press.ogg",
+          "duration": 0.17,
+          "peakDbfs": -18.47
+        },
+        "start": {
+          "url": "./game-audio/b-start.ogg",
+          "duration": 0.62,
+          "peakDbfs": -13.89
+        },
+        "capsule-hit-0": {
+          "url": "./game-audio/b-capsule-hit-0.ogg",
+          "duration": 0.22,
+          "peakDbfs": -16.59
+        },
+        "capsule-hit-1": {
+          "url": "./game-audio/b-capsule-hit-1.ogg",
+          "duration": 0.22,
+          "peakDbfs": -15.53
+        },
+        "capsule-hit-2": {
+          "url": "./game-audio/b-capsule-hit-2.ogg",
+          "duration": 0.22,
+          "peakDbfs": -15.55
+        },
+        "capsule-roll": {
+          "url": "./game-audio/b-capsule-roll.ogg",
+          "duration": 0.82,
+          "peakDbfs": -19.46
+        },
+        "wheel-tick": {
+          "url": "./game-audio/b-wheel-tick.ogg",
+          "duration": 0.11,
+          "peakDbfs": -17.7
+        },
+        "sphere-pass": {
+          "url": "./game-audio/b-sphere-pass.ogg",
+          "duration": 0.48,
+          "peakDbfs": -18.87
+        },
+        "rise": {
+          "url": "./game-audio/b-rise.ogg",
+          "duration": 0.9,
+          "peakDbfs": -17.57
+        },
+        "exit": {
+          "url": "./game-audio/b-exit.ogg",
+          "duration": 0.42,
+          "peakDbfs": -14.96
+        },
+        "land": {
+          "url": "./game-audio/b-land.ogg",
+          "duration": 0.33,
+          "peakDbfs": -11.08
+        },
+        "open": {
+          "url": "./game-audio/b-open.ogg",
+          "duration": 0.33,
+          "peakDbfs": -19.44
+        },
+        "reveal": {
+          "url": "./game-audio/b-reveal.ogg",
+          "duration": 2.1,
+          "peakDbfs": -3.48
+        },
+        "return": {
+          "url": "./game-audio/b-return.ogg",
+          "duration": 0.22,
+          "peakDbfs": -23.85
+        }
+      },
+      "runtimeGain": 1.172,
+      "reel": {
+        "url": "./game-audio/b-reel.ogg",
+        "duration": 11,
+        "measuredLUFS": -17.96,
+        "truePeakDbTP": -2.4
+      }
+    },
+    "c": {
+      "name": "能量引擎",
+      "cues": {
+        "press": {
+          "url": "./game-audio/c-press.ogg",
+          "duration": 0.17,
+          "peakDbfs": -15.34
+        },
+        "start": {
+          "url": "./game-audio/c-start.ogg",
+          "duration": 0.62,
+          "peakDbfs": -13.2
+        },
+        "capsule-hit-0": {
+          "url": "./game-audio/c-capsule-hit-0.ogg",
+          "duration": 0.22,
+          "peakDbfs": -16.46
+        },
+        "capsule-hit-1": {
+          "url": "./game-audio/c-capsule-hit-1.ogg",
+          "duration": 0.22,
+          "peakDbfs": -15.67
+        },
+        "capsule-hit-2": {
+          "url": "./game-audio/c-capsule-hit-2.ogg",
+          "duration": 0.22,
+          "peakDbfs": -16.2
+        },
+        "capsule-roll": {
+          "url": "./game-audio/c-capsule-roll.ogg",
+          "duration": 0.82,
+          "peakDbfs": -18.7
+        },
+        "wheel-tick": {
+          "url": "./game-audio/c-wheel-tick.ogg",
+          "duration": 0.11,
+          "peakDbfs": -15.51
+        },
+        "sphere-pass": {
+          "url": "./game-audio/c-sphere-pass.ogg",
+          "duration": 0.48,
+          "peakDbfs": -18.43
+        },
+        "rise": {
+          "url": "./game-audio/c-rise.ogg",
+          "duration": 0.9,
+          "peakDbfs": -18.22
+        },
+        "exit": {
+          "url": "./game-audio/c-exit.ogg",
+          "duration": 0.42,
+          "peakDbfs": -13.84
+        },
+        "land": {
+          "url": "./game-audio/c-land.ogg",
+          "duration": 0.33,
+          "peakDbfs": -10.17
+        },
+        "open": {
+          "url": "./game-audio/c-open.ogg",
+          "duration": 0.33,
+          "peakDbfs": -18.38
+        },
+        "reveal": {
+          "url": "./game-audio/c-reveal.ogg",
+          "duration": 2.1,
+          "peakDbfs": -3.73
+        },
+        "return": {
+          "url": "./game-audio/c-return.ogg",
+          "duration": 0.22,
+          "peakDbfs": -21.72
+        }
+      },
+      "runtimeGain": 1.117,
+      "reel": {
+        "url": "./game-audio/c-reel.ogg",
+        "duration": 11,
+        "measuredLUFS": -17.98,
+        "truePeakDbTP": -2.57
+      }
+    },
+    "d": {
+      "name": "魔法水晶",
+      "cues": {
+        "press": {
+          "url": "./game-audio/d-press.ogg",
+          "duration": 0.17,
+          "peakDbfs": -17.0
+        },
+        "start": {
+          "url": "./game-audio/d-start.ogg",
+          "duration": 0.62,
+          "peakDbfs": -13.99
+        },
+        "capsule-hit-0": {
+          "url": "./game-audio/d-capsule-hit-0.ogg",
+          "duration": 0.22,
+          "peakDbfs": -19.71
+        },
+        "capsule-hit-1": {
+          "url": "./game-audio/d-capsule-hit-1.ogg",
+          "duration": 0.22,
+          "peakDbfs": -18.38
+        },
+        "capsule-hit-2": {
+          "url": "./game-audio/d-capsule-hit-2.ogg",
+          "duration": 0.22,
+          "peakDbfs": -19.4
+        },
+        "capsule-roll": {
+          "url": "./game-audio/d-capsule-roll.ogg",
+          "duration": 0.82,
+          "peakDbfs": -21.84
+        },
+        "wheel-tick": {
+          "url": "./game-audio/d-wheel-tick.ogg",
+          "duration": 0.11,
+          "peakDbfs": -15.89
+        },
+        "sphere-pass": {
+          "url": "./game-audio/d-sphere-pass.ogg",
+          "duration": 0.48,
+          "peakDbfs": -19.43
+        },
+        "rise": {
+          "url": "./game-audio/d-rise.ogg",
+          "duration": 0.9,
+          "peakDbfs": -18.07
+        },
+        "exit": {
+          "url": "./game-audio/d-exit.ogg",
+          "duration": 0.42,
+          "peakDbfs": -13.81
+        },
+        "land": {
+          "url": "./game-audio/d-land.ogg",
+          "duration": 0.33,
+          "peakDbfs": -8.99
+        },
+        "open": {
+          "url": "./game-audio/d-open.ogg",
+          "duration": 0.33,
+          "peakDbfs": -18.09
+        },
+        "reveal": {
+          "url": "./game-audio/d-reveal.ogg",
+          "duration": 2.1,
+          "peakDbfs": -3.36
+        },
+        "return": {
+          "url": "./game-audio/d-return.ogg",
+          "duration": 0.22,
+          "peakDbfs": -22.49
+        }
+      },
+      "runtimeGain": 1.215,
+      "reel": {
+        "url": "./game-audio/d-reel.ogg",
+        "duration": 11,
+        "measuredLUFS": -18.01,
+        "truePeakDbTP": -2.8
+      }
+    }
+  },
+  "themeAssignments": {
+    "default": null,
+    "cosmic": null
+  }
+}

@@ -1,0 +1,21 @@
+Complete soft audio review — 2026-09-30
+All source samples modified: trimming, filtering, speed, spatial mix, envelopes and arrangement.
+Original soft sine voices and arrangement: lottery-platform/scripts/build_soft_audio_review.py
+
+GLEAM-GLOW-SFX-CHIME.wav — newagesoup
+https://freesound.org/people/newagesoup/sounds/351408/
+CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+Public author HQ preview; not the original WAV
+SHA256: 573cb83885ac0a0386a5bc75b1e097ef713fd587f1a8187e0c2e80e9e22b5f5a
+
+Water drop / Splash — bxyorna
+https://freesound.org/people/bxyorna/sounds/410335/
+CC0-1.0 — https://creativecommons.org/publicdomain/zero/1.0/
+Public author HQ preview; not the original AIFF
+SHA256: 2ba6f2dc5f1575eed55f333dcc4ee1f0d8b79963effec78766a75d567bd281da
+
+Shimmer glitter magic — The Berklee College of Music
+https://opengameart.org/content/shimmer-glitter-magic
+CC-BY-3.0 — https://creativecommons.org/licenses/by/3.0/
+Public author-linked FLAC
+SHA256: b6802e6ef22189058a4406ae5c7bda9a54c47e908fad3fd6212650c1aa0170af

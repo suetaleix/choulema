@@ -1,0 +1,8 @@
+{
+  "host": "smtp.example.com",
+  "port": 465,
+  "security": "ssl",
+  "username": "sender@example.com",
+  "sender": "sender@example.com",
+  "password_file": "/etc/choulema/smtp-password"
+}

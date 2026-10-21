@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>查询付款结果 · 抽了马</title><link rel="stylesheet" href="/brand-b.css">
+<style>*{box-sizing:border-box}body{margin:0;min-height:100dvh}main{max-width:560px;margin:clamp(36px,8vh,100px) auto;padding:0 18px}.card{padding:clamp(25px,5vw,44px)}h1{font-size:30px;margin:12px 0}p{line-height:1.7}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}</style></head>
+<body><header class="b-header"><a class="b-brand" href="/home.html"><img src="/horse-tight-192.png" alt="">抽了马</a><span class="b-badge">付款结果</span></header>
+<main><section class="b-card card"><span class="b-eyebrow">PAYMENT STATUS</span><h1 id="title">正在查询付款结果</h1><p class="b-muted" id="detail">页面返回不代表付款成功，系统以支付宝通知或订单查询为准。</p><p class="b-muted" id="order"></p>
+<div class="actions"><button id="refresh" class="b-primary">重新查询</button><a class="b-secondary" href="/">回到抽奖台</a><a class="b-secondary" href="/home.html">玩法首页</a></div></section></main>
+<script>
+const number=new URLSearchParams(location.search).get('order')||'';
+const title=document.getElementById('title'),detail=document.getElementById('detail'),order=document.getElementById('order'),button=document.getElementById('refresh');
+order.textContent=number?'订单：'+number:'缺少订单号';
+async function refresh(){if(!/^[A-Za-z0-9]{12,64}$/.test(number)){title.textContent='订单号无效';return;}button.disabled=true;
+ try{const r=await fetch('/api/v6/orders/'+encodeURIComponent(number)+'/refresh',{method:'POST'});const data=await r.json().catch(()=>({}));
+  if(r.status===401){location.href='/login.html?next='+encodeURIComponent(location.pathname+location.search);return;}
+  if(!r.ok){title.textContent='暂时无法确认付款';detail.textContent=data.error||data.detail||'请稍后重试，订单仍保留在账号中。';return;}
+  title.textContent=data.state==='paid'?'支付成功 · 权益已生效':data.state==='pending'?'等待付款或通知':data.state==='closed'?'订单已关闭':'订单状态：'+data.state;
+  detail.textContent=data.state==='paid'?'回到抽奖台即可使用，原来的配置和候选保留在设备中。':'支付结果以支付宝通知和服务端查询为准。若刚完成付款，请稍后再查，不要重复支付。';
+ }catch{title.textContent='暂时无法连接服务';detail.textContent='订单已保留。稍后重新查询或在抽奖台的“我的订单”查看。';}finally{button.disabled=false;}}
+button.onclick=refresh;refresh();
+</script></body></html>

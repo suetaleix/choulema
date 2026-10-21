@@ -1,0 +1,12 @@
+Choulema approved theme audio — slot-review-3 (2026-09-30)
+
+Six approved presets, each with start / pulse / stop / reveal and a full reference clip.
+These are the project's original pitched FM, bell and elastic-note compositions.
+This release contains no third-party sampled foley, motor, friction or noise-bed layer.
+Historical review samples and superseded v1/v2 assets are not used by this release.
+
+Source generator: scripts/build_slot_audio_review.py
+Approved reference: static/v7-preview/theme-audio/manifest.json
+Promotion: scripts/promote_theme_release.py (byte-for-byte copy, no re-encoding)
+Runtime: static/v7/game-audio.mjs, slot-audio-transport.mjs, machine-rhythm.mjs
+Production manifest records file SHA-256, measurements and original design settings.

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>抽了马 · 主题完整体验</title><link rel="icon" href="/favicon-tight-64.png"><link rel="stylesheet" href="./theme-experience.css?v=1"><script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script></head>
+<body data-theme="cosmic" data-phase="idle">
+<main id="experience" tabindex="-1" aria-label="3D 抽取体验">
+ <div id="scene" aria-label="可拖动查看的 3D 机台"></div><div class="vignette"></div>
+ <header class="hud topbar"><a class="brand" href="./theme-audio.html">✦ <strong>抽了马</strong><span>主题体验</span></a><div class="themes" aria-label="主题"><button data-theme="default" aria-pressed="false">默认主题</button><button data-theme="cosmic" aria-pressed="true">星空主题</button></div><button id="fullscreen" class="quiet" aria-label="进入全屏">⛶ <span>全屏</span></button></header>
+ <section class="hud controls" aria-label="体验设置">
+  <div class="eyebrow" id="themeLabel">星空主题 · 三种声音</div><h1 id="title">把惊喜，<br>交给星光。</h1><p class="lead" id="description">先选一套声音，再让整台机台为你演出。</p>
+  <div class="machine-tabs" aria-label="选择机台"><button data-machine="capsule" aria-pressed="true">胶囊机</button><button data-machine="wheel" aria-pressed="false">幸运转盘</button><button data-machine="sphere" aria-pressed="false">姓名星球</button></div>
+  <div id="soundOptions" class="sounds" aria-label="选择音效"><p>正在准备声音…</p></div>
+  <div class="volume-row"><button id="mute" class="quiet" aria-label="静音">♫</button><input id="volume" aria-label="音量" type="range" min="0" max="100" value="80"><output id="volumeValue">80%</output><button id="editList" class="quiet">编辑选项</button></div>
+  <button id="play" class="primary" disabled>开始抽取 <span>↗</span></button><p class="hint">按空格开始 · 演出时只看机台</p>
+  <button id="pick" class="pick">选这套声音</button><p id="savedChoice" class="saved-choice" role="status"></p>
+ </section>
+ <footer class="hud footer"><span id="poolCaption">示例选项 · 可编辑</span><a href="./theme-audio.html">只听声音 ↗</a></footer>
+ <div id="performance" hidden><button id="stop" class="quiet">结束本轮 <span>Esc</span></button><p id="phaseLabel" role="status">正在启动</p></div>
+ <section id="result" class="result" hidden aria-label="抽取结果"><span class="eyebrow">这次，就选它</span><h2 id="resultName"></h2><p id="resultSound"></p><div class="result-actions"><button id="again" class="primary">再抽一次 ↗</button><button id="back" class="quiet">换一套体验</button></div><button id="resultPick" class="pick">喜欢这套声音，记下来</button></section>
+ <p id="toast" role="status" hidden></p>
+</main>
+<dialog id="listDialog"><form id="listForm"><header><h2>这次抽什么？</h2><button id="closeList" type="button" class="quiet" aria-label="关闭选项">✕</button></header><label for="names">每行一个选项，2～48 个</label><textarea id="names" rows="10" maxlength="1200"></textarea><p id="listError" role="alert"></p><button class="primary" type="submit">使用这些选项</button><p class="dialog-note">仅用于本次体验，刷新后恢复示例。</p></form></dialog>
+<script type="module" src="./theme-experience.mjs?v=slot-review-3"></script></body></html>

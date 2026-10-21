@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark"><title>抽了马 · 星河入场</title>
+  <link rel="icon" href="/favicon-tight-64.png"><link rel="stylesheet" href="./stellar.css?v=sound-styles-4">
+  <script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script>
+</head>
+<body>
+<main id="gallery">
+  <div id="scene" aria-label="星空皮肤 3D 预览，可拖动旋转"><div id="loading">正在点亮星河<span></span></div></div>
+  <div class="scene-shade" aria-hidden="true"></div>
+  <header class="topbar gallery-ui">
+    <a class="brand" href="/login.html"><span class="brand-mark">✦</span><strong>抽了马</strong><span class="brand-divider"></span><span class="collection">星空系列</span></a>
+    <div class="top-actions"><span class="preview-badge"><i></i> 皮肤设计预览</span><button id="detailButton" class="quiet-button">了解这套皮肤 <span>↗</span></button></div>
+  </header>
+  <section class="story gallery-ui" aria-labelledby="skinTitle">
+    <div class="eyebrow"><span class="small-star">✧</span> 星河入场 <span class="eyebrow-line"></span> 付费主题</div>
+    <h1 id="skinTitle">星轨转盘</h1><p class="lead" id="skinLead">每一次转动，<br>都有星光回应。</p>
+    <p class="description" id="skinDescription"></p>
+    <div id="featureChips" class="feature-chips"></div>
+    <div class="story-actions"><button id="playButton" class="primary-button" disabled><span class="play-icon">▶</span><span id="playLabel">体验完整演出</span><span class="button-arrow">↗</span></button><button id="soundPreview" class="sound-preview" aria-label="选择并试听星空音效"><span>♫</span> 选音效 <small>4 款</small></button></div>
+    <p class="action-note" id="actionNote">免费预览 · 约 11 秒 · 空格开始</p>
+    <button id="compareButton" class="compare-button" aria-pressed="false"><span class="compare-orb"></span><span id="compareLabel">切换经典外观，对比一下</span><span>⇄</span></button>
+  </section>
+  <div class="object-caption gallery-ui"><i></i><span id="objectCaption">虹彩金属 / 星空珐琅</span><small>拖动机台，看看另一面</small></div>
+  <div class="sound-controls gallery-ui"><button id="soundStyleButton" class="sound-style-button" aria-label="当前音效星海空灵，选择其他音效"><span id="soundStyleName">星海空灵</span> ▾</button><button id="muteButton" aria-label="关闭音效" aria-pressed="true">♫</button><label for="volume">音量</label><input id="volume" type="range" min="0" max="100" value="80" aria-label="音量"><output id="volumeValue" for="volume">80%</output></div>
+  <nav class="skin-selector gallery-ui" aria-label="选择星空机台">
+    <button data-machine="capsule" aria-pressed="false"><span class="miniature capsule-mini" aria-hidden="true"><i></i><b></b></span><span><small>胶囊机皮肤</small><strong>星空胶囊</strong><em>把惊喜，藏进星光</em></span><span class="selected-dot"></span></button>
+    <button data-machine="wheel" aria-pressed="true"><span class="miniature wheel-mini" aria-hidden="true"><i></i></span><span><small>经典转盘皮肤 <b>新</b></small><strong>星轨转盘</strong><em>让好运，沿星轨抵达</em></span><span class="selected-dot"></span></button>
+    <button data-machine="sphere" aria-pressed="false"><span class="miniature sphere-mini" aria-hidden="true"><i>林</i><i>夏</i><i>周</i><i>许</i><i>陈</i><i>星</i></span><span><small>姓名星球皮肤 <b>新</b></small><strong>星云姓名球</strong><em>每个名字，都是一颗星</em></span><span class="selected-dot"></span></button>
+  </nav>
+  <footer class="gallery-footer gallery-ui"><span>基础机台始终免费 · 皮肤独立解锁</span><span>演示名单 · 不保存抽取记录 · 新皮肤定价待确认</span></footer>
+  <div id="performance" hidden><span id="phaseLabel">星河正在转动</span><button id="exitPerformance" aria-label="结束演出预览">退出预览 <kbd>Esc</kbd></button></div>
+  <section id="result" class="result-card" aria-label="演出预览结果" hidden><span>星光为你停留</span><h2 id="resultName"></h2><p>演示结果 · 仅供体验效果</p><div><button id="againButton" class="primary-button">再体验一次 ↗</button><button id="backButton" class="quiet-button">返回皮肤预览</button></div></section>
+  <div id="toast" role="status" hidden></div>
+  <dialog id="details" aria-labelledby="detailsTitle"><button id="closeDetails" class="dialog-close" aria-label="关闭皮肤说明">×</button><span class="eyebrow">星空系列 / 皮肤概念</span><h2 id="detailsTitle">把一整片星河，<br>装进你的机台。</h2><p class="dialog-lead">同一套星空气质，三种不同的惊喜。</p><div id="detailContent"></div><div class="price-note"><strong>免费机台不变，喜欢的皮肤单独解锁。</strong><p>星空胶囊现有价格 ¥9.90 / 365 天。星轨转盘、星云姓名球为新增付费皮肤，价格和销售方式待确认，不自动加入现有胶囊权益。本页可免费预览，暂不购买。</p></div><p class="demo-note">本页是独立视觉与合成音效样音预览。使用演示候选，不创建账号、订单或正式抽取记录；正式商品接线在设计确认后进行。</p><button id="detailTry" class="primary-button">回到舞台体验 ↗</button></dialog>
+  <dialog id="soundDialog" class="sound-dialog" aria-labelledby="soundTitle">
+    <button id="closeSoundDialog" class="dialog-close" aria-label="关闭音效选择">×</button>
+    <span class="eyebrow">星空系列 / 音效试听</span>
+    <h2 id="soundTitle">让星空，有你喜欢的声音。</h2>
+    <p class="dialog-lead">机台动作是主角。四种星空音色，为运转与揭晓增添细节。</p>
+    <div class="sound-context"><span id="soundMachineLabel">星空胶囊</span><span id="soundLevelLabel">同音量试听 · 80%</span></div>
+    <p id="machineSoundDescription" class="machine-sound-description">胶囊滚动 · 轻碰出仓 · 开壳</p>
+    <div id="soundOptions" class="sound-options"></div>
+    <div class="audition-status"><span id="auditionStatus" role="status">点击一款试听，约 6 秒，包含运转与揭晓。</span><button id="stopAudition" disabled>停止试听</button></div>
+    <div class="sound-dialog-bottom"><span id="soundSelectionLabel">当前使用：星海空灵</span><button id="applySoundStyle" class="primary-button">使用星海空灵 ↗</button></div>
+    <p class="sound-footnote">四种风格适配全部机台。切换时停止上一段，声音不叠加。</p>
+  </dialog>
+</main>
+<script type="module" src="./stellar.js?v=game-audio-review-1"></script>
+</body></html>

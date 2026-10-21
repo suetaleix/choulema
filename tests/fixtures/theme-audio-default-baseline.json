@@ -1,0 +1,50 @@
+{
+  "default1": {
+    "url": "./theme-audio/default1.mp3",
+    "duration": 16,
+    "measuredLUFS": -19.0,
+    "truePeakDbTP": -3.14,
+    "phaseRmsDbfs": {
+      "start": -18.46,
+      "motion": -23.01,
+      "charge": -21.01,
+      "coast": -22.25,
+      "reveal": -19.2,
+      "tail": -29.48
+    },
+    "bytes": 385389,
+    "sha256": "440e92a090b1f6dbc6e0fdd18c5c150cf8568cbb35296aefe2999815cd1c788a"
+  },
+  "default2": {
+    "url": "./theme-audio/default2.mp3",
+    "duration": 16,
+    "measuredLUFS": -19.16,
+    "truePeakDbTP": -1.7,
+    "phaseRmsDbfs": {
+      "start": -19.22,
+      "motion": -23.73,
+      "charge": -21.69,
+      "coast": -21.38,
+      "reveal": -21.17,
+      "tail": -30.0
+    },
+    "bytes": 385389,
+    "sha256": "06440e06c67a4ba146c34bfe7302c6c95c7d301694f43eccf2551ff05ad83a36"
+  },
+  "default3": {
+    "url": "./theme-audio/default3.mp3",
+    "duration": 16,
+    "measuredLUFS": -19.0,
+    "truePeakDbTP": -2.97,
+    "phaseRmsDbfs": {
+      "start": -17.55,
+      "motion": -25.3,
+      "charge": -18.53,
+      "coast": -23.89,
+      "reveal": -18.22,
+      "tail": -27.77
+    },
+    "bytes": 385389,
+    "sha256": "1fb4a0f8b9160bc910b2701d184e8c5e8286c2de9e2d4c0559b1b03e2d36270c"
+  }
+}

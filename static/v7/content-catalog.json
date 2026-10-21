@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "version": "8.0.0",
+  "machines": {
+    "wheel": {
+      "name": "经典转盘",
+      "icon": "◉",
+      "description": "转动期待",
+      "feature": null,
+      "stage_id": "wheel",
+      "max_items": 48,
+      "max_count": 1,
+      "modes": [
+        "normal",
+        "weighted",
+        "no_repeat",
+        "inventory",
+        "winners"
+      ]
+    },
+    "capsule": {
+      "name": "胶囊机",
+      "icon": "◒",
+      "description": "打开未知",
+      "feature": null,
+      "stage_id": "capsule",
+      "max_items": 1000,
+      "max_count": 50,
+      "modes": [
+        "normal",
+        "weighted",
+        "no_repeat",
+        "inventory",
+        "winners"
+      ]
+    },
+    "sphere": {
+      "name": "姓名星球",
+      "icon": "◌",
+      "description": "发现主角",
+      "feature": null,
+      "stage_id": "sphere",
+      "max_items": 1000,
+      "max_count": 50,
+      "modes": [
+        "normal",
+        "weighted",
+        "no_repeat",
+        "inventory",
+        "winners",
+        "groups"
+      ]
+    }
+  },
+  "themes": {
+    "classic": {
+      "name": "默认主题",
+      "description": "完整机台外观与三种可选音效",
+      "feature": null,
+      "renderer": "classic",
+      "machines": [
+        "capsule",
+        "wheel",
+        "sphere"
+      ],
+      "sounds": [
+        "slot-default1",
+        "slot-default2",
+        "slot-default3"
+      ]
+    },
+    "cosmic": {
+      "name": "星空主题",
+      "description": "完整机台外观与三种可选音效",
+      "feature": "cosmic",
+      "renderer": "cosmic",
+      "machines": [
+        "capsule",
+        "wheel",
+        "sphere"
+      ],
+      "sounds": [
+        "slot-cosmic1",
+        "slot-cosmic2",
+        "slot-cosmic3"
+      ]
+    }
+  },
+  "capabilities": {
+    "multi_award": {
+      "name": "多奖项轮次",
+      "features": [
+        "pro"
+      ]
+    },
+    "branding": {
+      "name": "品牌舞台",
+      "features": [
+        "pro"
+      ]
+    },
+    "roster_import": {
+      "name": "名单导入",
+      "features": [
+        "pro"
+      ]
+    },
+    "result_export": {
+      "name": "按场次导出",
+      "features": [
+        "pro"
+      ]
+    },
+    "class_sessions": {
+      "name": "多班课次",
+      "features": [
+        "pro"
+      ]
+    },
+    "class_report": {
+      "name": "跨课次统计",
+      "features": [
+        "pro"
+      ]
+    }
+  },
+  "products": {
+    "cosmic": {
+      "name": "星空主题",
+      "feature": "cosmic",
+      "kind": "skin",
+      "target": "cosmic",
+      "machines": [
+        "capsule",
+        "wheel",
+        "sphere"
+      ],
+      "giftable": true,
+      "days": 365,
+      "price_cents": 990,
+      "description": "三款星空机台外观与三种可选音效 · 年订阅，365 天"
+    },
+    "pro": {
+      "name": "专业功能版",
+      "feature": "pro",
+      "kind": "feature",
+      "capabilities": [
+        "multi_award",
+        "branding",
+        "roster_import",
+        "result_export",
+        "class_sessions",
+        "class_report"
+      ],
+      "machines": [
+        "capsule",
+        "sphere",
+        "wheel"
+      ],
+      "giftable": true,
+      "days": 365,
+      "price_cents": 9900,
+      "description": "多班课次、品牌展示、多奖项轮次与按场导出 · 年订阅，365 天"
+    }
+  }
+}

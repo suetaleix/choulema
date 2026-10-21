@@ -1,0 +1,2 @@
+# Test-only dummy HMAC secret
+tests/test_v71_release.py:generic-api-key:22

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>结果分页渲染夹具</title>
+<script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:12px;background:#0c1219;color:#e9eff5;font:15px/1.5 system-ui}main{max-width:1050px;margin:auto}h1{font-size:20px}section{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}button,select{padding:9px;background:#203342;color:inherit;border:1px solid #618094;border-radius:8px}label{display:flex;gap:5px;align-items:center}#stage{height:400px;width:100%;background:#0a1016}#readout{white-space:pre-wrap;overflow-wrap:anywhere;min-height:60px}#expected{max-height:120px;overflow:auto}button:disabled{opacity:.4}
+</style>
+<main>
+<h1>结果分页渲染夹具</h1><p>合成数据 · 仅测试公开展示接口 · 不请求抽取服务</p>
+<section>
+<label>机台<select id="machine"><option value="sphere">姓名星球</option><option value="capsule">胶囊机</option></select></label>
+<label>结果<select id="mode"><option value="results">多人</option><option value="groups">分组</option></select></label>
+<label>数量<select id="count"><option>1</option><option>6</option><option>12</option><option selected>13</option><option>50</option></select></label>
+<button id="configure">应用机台</button><button id="reveal">演示揭晓</button><button id="finish">直接完成</button><button id="start">再次启动</button><button id="reset">重置</button>
+</section>
+<section><button id="previous">上一页</button><button id="next">下一页</button><button id="last">末页</button></section>
+<output id="readout" aria-live="polite">尚未展示</output><div id="expected" aria-label="本页输入快照"></div>
+<div id="stage" aria-label="分页三维舞台"></div>
+</main><script type="module" src="/fixtures/result-pages.mjs"></script>
+</html>

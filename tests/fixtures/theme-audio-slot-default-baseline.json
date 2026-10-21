@@ -1,0 +1,191 @@
+{
+  "slot-default1": {
+    "clip": {
+      "url": "./theme-audio/slot-default1-v1.mp3",
+      "duration": 16.0,
+      "measuredLUFS": -19.26,
+      "truePeakDbTP": -4.41,
+      "bytes": 385389,
+      "sha256": "5d570f9ab814a7b54967a5a5e959940556e53cf1b0b2c57e38ab308aec285afe",
+      "phaseRmsDbfs": {
+        "start": -18.03,
+        "motion": -22.31,
+        "charge": -24.0,
+        "coast": -25.04,
+        "reveal": -17.91,
+        "tail": -37.5
+      }
+    },
+    "slotClips": {
+      "start": {
+        "url": "./theme-audio/slot-default1-v1-start.mp3",
+        "duration": 0.9,
+        "measuredLUFS": -14.39,
+        "truePeakDbTP": -6.14,
+        "bytes": 23085,
+        "sha256": "926dc5d70e0827993e14977cc1f281f4da5c0a366a7944132735c1b9cbca5781"
+      },
+      "roll": {
+        "url": "./theme-audio/slot-default1-v1-roll.wav",
+        "duration": 1.6,
+        "measuredLUFS": -24.67,
+        "truePeakDbTP": -13.38,
+        "bytes": 307278,
+        "sha256": "b8fa2b5f6052f5ca40250b341d3f37b65af4ea84c5be1b5e2856ae2b1fda0bd8",
+        "loopStart": 0,
+        "loopEnd": 1.6,
+        "format": "pcm_s16le"
+      },
+      "pulse": {
+        "url": "./theme-audio/slot-default1-v1-pulse.mp3",
+        "duration": 0.13,
+        "measuredLUFS": null,
+        "truePeakDbTP": -10.14,
+        "bytes": 4653,
+        "sha256": "25c66da7c8dd4a8abb77a1ad5aa5dfdd32e7c876087c58dbf9635140ef86cabb"
+      },
+      "stop": {
+        "url": "./theme-audio/slot-default1-v1-stop.mp3",
+        "duration": 0.65,
+        "measuredLUFS": -15.59,
+        "truePeakDbTP": -7.14,
+        "bytes": 17325,
+        "sha256": "889fcf897762578b69215084e20b72743f591426c3f32c8fb88fb852bddc8636"
+      },
+      "reveal": {
+        "url": "./theme-audio/slot-default1-v1-reveal.mp3",
+        "duration": 4.2,
+        "measuredLUFS": -15.71,
+        "truePeakDbTP": -1.7,
+        "bytes": 101997,
+        "sha256": "a832e573e026862a00973a3336a10acc03139402be1a534f7fcc5ea6831c1abe"
+      }
+    }
+  },
+  "slot-default2": {
+    "clip": {
+      "url": "./theme-audio/slot-default2-v1.mp3",
+      "duration": 16.0,
+      "measuredLUFS": -19.26,
+      "truePeakDbTP": -6.03,
+      "bytes": 385389,
+      "sha256": "bdac740d00540849fc75690b21161572cd797f7e3c91cd5e24e37d6e77fef955",
+      "phaseRmsDbfs": {
+        "start": -19.68,
+        "motion": -22.16,
+        "charge": -23.98,
+        "coast": -25.65,
+        "reveal": -17.68,
+        "tail": -36.26
+      }
+    },
+    "slotClips": {
+      "start": {
+        "url": "./theme-audio/slot-default2-v1-start.mp3",
+        "duration": 0.9,
+        "measuredLUFS": -16.37,
+        "truePeakDbTP": -8.33,
+        "bytes": 23085,
+        "sha256": "a626f6f0c5c8e542474cd0427bc24b4f724e29bfea4a6ee3c2b7723886b9f073"
+      },
+      "roll": {
+        "url": "./theme-audio/slot-default2-v1-roll.wav",
+        "duration": 1.6,
+        "measuredLUFS": -26.15,
+        "truePeakDbTP": -15.57,
+        "bytes": 307278,
+        "sha256": "28113dfa40110c06a90dcb1add04af90c8b1d981746a268e9e994fa2bd8306f2",
+        "loopStart": 0,
+        "loopEnd": 1.6,
+        "format": "pcm_s16le"
+      },
+      "pulse": {
+        "url": "./theme-audio/slot-default2-v1-pulse.mp3",
+        "duration": 0.13,
+        "measuredLUFS": null,
+        "truePeakDbTP": -12.33,
+        "bytes": 4653,
+        "sha256": "61c93917696d2d1d26168c842c8fee1f0c6d02bbff7cbd31641d23ce45620951"
+      },
+      "stop": {
+        "url": "./theme-audio/slot-default2-v1-stop.mp3",
+        "duration": 0.65,
+        "measuredLUFS": -17.09,
+        "truePeakDbTP": -9.33,
+        "bytes": 17325,
+        "sha256": "d6ab2b38a990ad201f47577d09944e9b488029822fdbde1d43d9a0d7662ac151"
+      },
+      "reveal": {
+        "url": "./theme-audio/slot-default2-v1-reveal.mp3",
+        "duration": 4.2,
+        "measuredLUFS": -15.17,
+        "truePeakDbTP": -3.83,
+        "bytes": 101997,
+        "sha256": "17e6c83427aa5b619f34258f18daec0371424c5c01d0ac4fb2305697cc236bbb"
+      }
+    }
+  },
+  "slot-default3": {
+    "clip": {
+      "url": "./theme-audio/slot-default3-v1.mp3",
+      "duration": 16.0,
+      "measuredLUFS": -19.26,
+      "truePeakDbTP": -4.78,
+      "bytes": 385389,
+      "sha256": "8faceee6874b19079d7137f97f67e9ab1f95f0538b3b2588d2832d2dba736e0d",
+      "phaseRmsDbfs": {
+        "start": -19.66,
+        "motion": -22.14,
+        "charge": -23.87,
+        "coast": -25.81,
+        "reveal": -18.43,
+        "tail": -39.02
+      }
+    },
+    "slotClips": {
+      "start": {
+        "url": "./theme-audio/slot-default3-v1-start.mp3",
+        "duration": 0.9,
+        "measuredLUFS": -16.03,
+        "truePeakDbTP": -6.72,
+        "bytes": 23085,
+        "sha256": "c2ca6fb50bb92dc14545b208d72ffa34806eb945aa3ab4d98baeeadc805f5dc1"
+      },
+      "roll": {
+        "url": "./theme-audio/slot-default3-v1-roll.wav",
+        "duration": 1.6,
+        "measuredLUFS": -25.55,
+        "truePeakDbTP": -13.96,
+        "bytes": 307278,
+        "sha256": "4de6a7c304acb7132e03e811980b330f7d6f2679cf56ecfd4e2c9cb9d40e2568",
+        "loopStart": 0,
+        "loopEnd": 1.6,
+        "format": "pcm_s16le"
+      },
+      "pulse": {
+        "url": "./theme-audio/slot-default3-v1-pulse.mp3",
+        "duration": 0.13,
+        "measuredLUFS": null,
+        "truePeakDbTP": -10.72,
+        "bytes": 4653,
+        "sha256": "4dae1fafe15400fdb7f2b735bd7da552da27ae4e2e071a0849ce40866ead4be0"
+      },
+      "stop": {
+        "url": "./theme-audio/slot-default3-v1-stop.mp3",
+        "duration": 0.65,
+        "measuredLUFS": -17.22,
+        "truePeakDbTP": -7.72,
+        "bytes": 17325,
+        "sha256": "c1f8d4ec915a1888a6ba018ec758b53616427ab55cb7ecaec742b28ca165b0e0"
+      },
+      "reveal": {
+        "url": "./theme-audio/slot-default3-v1-reveal.mp3",
+        "duration": 4.2,
+        "measuredLUFS": -15.8,
+        "truePeakDbTP": -2.22,
+        "bytes": 101997,
+        "sha256": "30c6143ad013c751dacb43f957e76025ac21d2027786a87b6453ecf632c97aac"
+      }
+    }
+  }
+}

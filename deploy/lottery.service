@@ -1,0 +1,20 @@
+[Unit]
+Description=Choulema V8
+After=network.target
+
+[Service]
+Type=simple
+User=choulema
+Group=choulema
+WorkingDirectory=/opt/choulema/current
+EnvironmentFile=/etc/choulema/production.env
+ExecStartPre=/opt/choulema/current/.venv/bin/python scripts/preflight.py
+ExecStart=/opt/choulema/current/.venv/bin/python -m uvicorn server:app --host 127.0.0.1 --port 8901 --workers 1 --proxy-headers --forwarded-allow-ips=127.0.0.1
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

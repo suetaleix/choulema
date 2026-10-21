@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1528">
+  <title>抽了马 · 免费抽，尽兴玩</title>
+  <link rel="icon" href="/favicon-tight-64.png">
+  <link rel="stylesheet" href="/v6/studio.css?v=vu15-preview-honesty-1">
+<link rel="stylesheet" href="/v7/game-shell.css?v=ui-polish-20261007">
+  <script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script>
+<link rel="stylesheet" href="/v7/feedback.css?v=feedback-20261009">
+</head>
+<body class="studio-page game-page">
+  <main class="game-shell">
+    <section class="stage-panel game-stage" aria-label="3D 抽取舞台" inert>
+      <img id="brandLogo" alt="活动 Logo" hidden>
+      <div id="stage" aria-label="可以拖动查看、点击启动的 3D 机台"><div id="stageLoading">正在准备你的 3D 机台…</div></div>
+      <div class="stage-heading game-caption"><div><p class="eyebrow" id="sceneKicker">免费抽，尽兴玩</p><h1 id="sceneTitle">今天吃点什么？</h1><p id="sceneSubtitle">不纠结，抽一下。让一颗胶囊替你决定。</p></div><span class="scene-number" id="sceneNumber" aria-hidden="true"></span></div>
+      <div class="stage-tools game-tools stage-ui"><button id="muteButton" aria-label="切换声音" title="声音">♪</button><button id="fullscreenButton" aria-label="切换全屏" title="全屏 / 退出全屏">⛶</button><span class="stage-preference-state" hidden><select id="quality" aria-label="画质"><option value="high" selected>最高画质</option><option value="auto">自动画质</option><option value="medium">均衡 3D</option><option value="low">轻量 3D</option></select><label><input type="checkbox" id="reduceMotion">简洁动效</label></span></div>
+      <nav class="game-top stage-ui" aria-label="游戏导航">
+        <a class="brand" href="/login.html" aria-label="返回抽了马介绍"><span class="brand-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 4-4 4a7 7 0 0 0 10 10l4-4A7 7 0 0 0 8 4Z"/><path d="m6 6 12 12M10 4c3-2 7 1 7 3"/></svg></span><strong>抽了马<span>免费抽，尽兴玩</span></strong></a>
+        <div class="applications game-scenes" aria-label="选择玩法">
+          <button data-app="food" class="app active"><span class="app-icon">🍜</span><span>抽吃什么</span></button>
+          <button data-app="play" class="app"><span class="app-icon">✦</span><span>抽玩什么</span></button>
+          <button data-app="prize" class="app"><span class="app-icon">🎁</span><span>抽奖品</span></button>
+          <button data-app="person" class="app"><span class="app-icon">◎</span><span>抽点名</span></button>
+        </div>
+        <div class="game-account"><button id="libraryButton" class="icon-button" aria-label="我的配置" title="我的配置">▤</button><button id="accountButton" class="account-button">账号与反馈 ↗</button></div>
+      </nav>
+      <div class="machines machine-rail stage-ui" aria-label="选择机台">
+        <button data-machine="wheel"><span>◉</span><div>经典转盘<small>转动期待</small></div><em>免费</em></button>
+        <button data-machine="capsule" class="active"><span>◒</span><div>胶囊机<small>打开未知</small></div><em>免费</em></button>
+        <button data-machine="sphere"><span>◌</span><div>姓名星球<small>发现主角</small></div><em>免费</em></button>
+      </div>
+      <nav class="game-tool-rail stage-ui" aria-label="游戏工具">
+        <button id="mobileSettings" title="候选与规则" aria-label="候选与规则"><span>☷</span><small>候选</small></button>
+        <button id="themeButton" title="机台与外观" aria-label="机台与外观"><span>✧</span><small>外观</small></button>
+        <button id="historyButton" title="抽取记录" aria-label="抽取记录"><span>◷</span><small>记录</small></button>
+        <button id="experienceButton" title="演出偏好" aria-label="演出偏好"><span>⚙</span><small>偏好</small></button>
+      </nav>
+      <button id="inviteButton" class="game-invite stage-ui" aria-label="邀请好友" title="邀请好友"><span>✧</span><span>邀请好友<small>查看活动与奖励进度</small></span><span>›</span></button>
+      <div class="stage-meta candidate-chip stage-ui"><span><i></i><span id="modeBadge">经典 · 免费</span></span><span id="poolBadge">8 个候选</span></div>
+      <div id="gameStatus" class="game-status" role="status" hidden>正在请求抽取…</div>
+      <div class="draw-zone stage-bottom stage-ui"><div class="draw-context" id="drawContext">随机选择 · 一次一个 · 不限次数</div><button id="drawButton" class="draw-button"><span>✦</span><strong>抽一道</strong><span>↗</span></button><button id="skipButton" hidden class="quiet" aria-label="直接揭晓已保存结果">直接揭晓</button><p class="draw-hint">点击机台或按 <kbd>空格</kbd> 抽取 · <kbd>Esc</kbd> 退出全屏</p></div>
+      <button id="edgeReveal" class="edge-reveal" aria-label="显示演出控制">显示控制</button>
+      <button id="touchExit" class="touch-exit" aria-label="退出全屏">退出全屏</button>
+      <div id="result" class="result-card game-result" hidden aria-live="polite"><small id="resultKicker">这次就选</small><h2 id="resultName"></h2><ol id="multiResult" aria-label="本页抽取结果" hidden></ol><nav id="resultPagination" class="result-pagination" aria-label="抽取结果分页" hidden><button id="resultPrevious" type="button" disabled>上一页</button><span id="resultPageInfo" aria-live="polite"></span><button id="resultNext" type="button" disabled>下一页</button></nav><div id="groupResult"></div><div class="result-actions"><button id="acceptButton" aria-label="保留本次结果并再抽一次">再抽一次</button><button id="copyButton">复制结果</button><button id="closeResult" aria-label="收起结果并返回机台">返回机台</button></div></div>
+      <button id="mobileMachine" hidden aria-hidden="true" tabindex="-1"></button><button id="settingsBackdrop" class="settings-backdrop" hidden tabindex="-1" aria-label="关闭候选与规则"></button><aside class="settings game-settings" id="settingsPanel" inert aria-label="候选与规则"><div class="settings-scroll"><div class="panel-heading"><h2>候选与规则</h2><button id="closeSettings" class="quiet" aria-label="关闭设置">✕</button></div><label class="field">配置名称<input id="configTitle" maxlength="80" value="今天吃什么"></label><div class="preset-row" id="presets"></div><label class="field">抽取规则<select id="drawMode"></select></label><div class="field-row"><label class="field">每次人数 / 数量<input id="drawCount" type="number" min="1" max="50" value="1"></label><label class="field" id="groupField" hidden>分成几组<input id="groupCount" type="number" min="2" max="50" value="2"></label></div>
+        <div class="field-heading"><label for="candidates">候选清单</label><span id="candidateCount">8 项</span></div><textarea id="candidates" rows="8" spellcheck="false" aria-label="候选清单"></textarea><button id="importButton" class="wide">导入 CSV / Excel · 专业</button><input id="importFile" type="file" accept=".csv,.xlsx" hidden><p class="helper" id="candidateHelp">每行一项；行首加 ! 临时排除。重名按编号区分。</p>
+        <label class="field" id="tagFilterField">仅抽这个标签<select id="tagFilter"><option value="">全部标签</option></select></label><p class="helper" id="runProgress" aria-live="polite"></p><div id="prizeSettings" hidden><label class="field">奖项与名额<textarea id="awards" rows="3" placeholder="一等奖,1&#10;二等奖,3"></textarea></label><label class="checkbox"><input id="crossUnique" type="checkbox" checked>跨奖项不重复中奖</label><label class="field">当前奖项<select id="currentAward"></select></label><label class="field">舞台标题 · 专业<input id="brandTitle" maxlength="80" placeholder="例如：2026 年度盛典"></label></div>
+        <div class="brand-files"><label class="field">舞台 Logo · 专业<input id="logoFile" type="file" accept="image/png,image/jpeg,image/webp"></label><label class="field">舞台背景 · 专业<input id="backdropFile" type="file" accept="image/png,image/jpeg,image/webp"></label><button id="clearBrand" class="wide">清除品牌图片</button></div><label class="checkbox"><input type="checkbox" id="rehearsal">演练 / 免费预览专业功能</label><div class="panel-actions"><button id="newRoundButton">新开一轮</button><button id="classSwitch">切换班级 / 继续课次 · 专业</button></div><button id="classReport" class="wide">跨课次统计 · 专业</button><button id="displayButton" class="wide">打开观众大屏 ⛶</button><div class="rule-note"><b>你的规则，清清楚楚。</b><p>不重复规则不会自动重置。抽取结果先保存，再由机台揭晓。</p></div>
+      </div><div class="settings-commit"><div class="panel-actions"><button id="applyButton" class="solid">应用设置</button><button id="saveButton">保存配置</button></div></div></aside>
+    </section>
+  </main>
+  <div id="toast" role="status" hidden></div><dialog id="modal"><div class="modal-heading"><h2 id="modalTitle"></h2><button id="modalClose" aria-label="关闭">✕</button></div><div id="modalBody"></div></dialog>
+<script type="module" src="/v6/studio.js?v=feedback-20261009"></script>
+</body>
+</html>
